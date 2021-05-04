@@ -797,6 +797,10 @@ li.bordered > ul > details > div {
   margin: 0 0.25em 0 0.25em;
 }
 
+.tags.no-bullets {
+    list-style-type:none;
+}
+
 /* Print */
 @media print {
   .page,
@@ -844,7 +848,7 @@ li.bordered > ul > details > div {
   position: relative;
 }
 .color.midnightblue::before {
-  background-color: midnightblue;
+  background-color: #27CFFD;
 }
 .color.chartreuse::before {
   background-color: chartreuse;
@@ -1047,4 +1051,9 @@ footer {
   main:nth-last-child(3) {
     margin-bottom: 0;
   }
+}
+
+.none-padding-margin {
+  margin: 0;
+  padding: 0;
 }
