@@ -1,4 +1,4 @@
-::-moz-selection {
+﻿::-moz-selection {
   background: yellow;
 }
 ::selection {
@@ -1056,4 +1056,18 @@ footer {
 .none-padding-margin {
   margin: 0;
   padding: 0;
+}
+
+.avatar-wrapper {
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar {
+  position: relative;
+  display: block;
+  flex: 1 0 auto;
+  max-width: 16rem;
+  width: 135%;
 }
