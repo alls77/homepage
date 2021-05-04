@@ -203,14 +203,14 @@ button {
   text-transform: none;
 }
 
-/* Correct the inability to style clickable types in iOS and Safari	*/
+/* Correct the inability to style clickable types in iOS and Safari */
 button,
 [type="button"] {
   -webkit-appearance: button;
   appearance: button;
 }
 
-/* Remove the inner border and padding in Firefox	*/
+/* Remove the inner border and padding in Firefox */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner {
   border-style: none;
@@ -315,6 +315,7 @@ article {
   flex-wrap: wrap;
   align-items: stretch;
   padding: 0;
+  
   /**
    * Temporary hack to be sure avatar
    * is rendered on print preview
@@ -521,8 +522,8 @@ article {
   position: relative;
   display: block;
   flex: 1 0 auto;
-  max-width: 15rem;
-  width: 100%;
+  max-width: 16rem;
+  width: 135%;
 }
 @media only screen and (max-width: 1199px) {
   .avatar-wrapper {
@@ -797,10 +798,6 @@ li.bordered > ul > details > div {
   margin: 0 0.25em 0 0.25em;
 }
 
-.tags.no-bullets {
-    list-style-type:none;
-}
-
 /* Print */
 @media print {
   .page,
@@ -848,7 +845,7 @@ li.bordered > ul > details > div {
   position: relative;
 }
 .color.midnightblue::before {
-  background-color: #27CFFD;
+  background-color: #27cffd;
 }
 .color.chartreuse::before {
   background-color: chartreuse;
@@ -1056,18 +1053,4 @@ footer {
 .none-padding-margin {
   margin: 0;
   padding: 0;
-}
-
-.avatar-wrapper {
-  padding: 0 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.avatar {
-  position: relative;
-  display: block;
-  flex: 1 0 auto;
-  max-width: 16rem;
-  width: 135%;
 }
