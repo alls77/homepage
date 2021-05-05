@@ -315,7 +315,7 @@ article {
   flex-wrap: wrap;
   align-items: stretch;
   padding: 0;
-  
+
   /**
    * Temporary hack to be sure avatar
    * is rendered on print preview
