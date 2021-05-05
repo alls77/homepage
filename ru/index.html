@@ -7,9 +7,17 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
+    <header>
+    <div class="credits">
+      <label class="switch">
+        <input type="checkbox" id="modeSwitcher">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
     <main>
       <article>
-        <div class="page" style="border-color: #27cffd">
+        <div id="page" class="page" style="border-color: #27cffd">
           <div class="stackable grid">
             <div class="row">
               <div class="three wide center aligned column">
@@ -17,7 +25,7 @@
                 <div class="avatar-wrapper">
                   <object
                     class="avatar"
-                    data="../styles/img/avatar.jpg"
+                    data="../styles/img/avatar.png"
                     role="img"
                     aria-label="avatar"
                   ></object>
@@ -37,8 +45,9 @@
                           href="https://www.facebook.com/alina.selina.710/"
                           rel="author"
                           class="facebook"
+                          id="fb_link"
                         >
-                          <svg
+                          <svg id="fb_svg"
                             class="icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
@@ -47,7 +56,7 @@
                               d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"
                             />
                           </svg>
-                          <span>alina.selina</span>
+                          <span id="fb_text">alina.selina</span>
                         </a>
                       </li>
                       <li>
@@ -55,8 +64,9 @@
                           href="https://t.me/selina_alina"
                           rel="author"
                           class="telegram"
+                          id="t_link"
                         >
-                          <svg
+                          <svg id="t_svg"
                             class="icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
@@ -66,7 +76,7 @@
                               d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
                             ></path>
                           </svg>
-                          <span>selina_alina</span>
+                          <span id="t_text">selina_alina</span>
                         </a>
                       </li>
                       <li>
@@ -74,8 +84,9 @@
                           href="mailto:alina.selina08@gmail.com"
                           rel="author"
                           class="mail"
+                          id="mail_link"
                         >
-                          <svg
+                          <svg id="mail_svg"
                             class="icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -84,7 +95,7 @@
                               d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
                             ></path>
                           </svg>
-                          <span>alina.selina08@gmail.com</span>
+                          <span id="mail_text">alina.selina08@gmail.com</span>
                         </a>
                       </li>
                     </ul>
@@ -299,13 +310,13 @@
                 <!-- Wants -->
                 <section>
                   <h3>Хочется</h3>
-                  <p class="none-padding-margin" style="color: #a0a0a0">
+                  <p class="none-padding-margin">
                     БЫТЬ ХОРОШИМ ПРОГРАММИСТОМ
                   </p>
-                  <p class="none-padding-margin" style="color: #606060">
+                  <p class="none-padding-margin">
                     ПЛАНИРОВАТЬ СВОЕ ВРЕМЯ
                   </p>
-                  <p class="none-padding-margin" style="color: #080808">
+                  <p class="none-padding-margin">
                     БОЛЬШЕ ЧИТАТЬ
                   </p>
                 </section>
@@ -315,5 +326,6 @@
         </div>
       </article>
     </main>
+	<script src="../script.js" type="text/javascript"></script>
   </body>
 </html>
